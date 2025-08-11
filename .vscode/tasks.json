@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Start MongoDB",
+			"type": "shell",
+			"command": "mkdir -p /tmp/mongodb && mongod --dbpath /tmp/mongodb --fork --logpath /tmp/mongodb.log || true",
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}
